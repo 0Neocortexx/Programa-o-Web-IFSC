@@ -1,0 +1,57 @@
+html, body {
+    height: 100%;
+    margin: 0; /* Remove as margens padrão do corpo e da página */
+    overflow: hidden; /* Remove barras de rolagem padrão */
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-box {
+    border: 1px solid black;
+    height: 500px;
+    width: 400px;
+    border-radius: 30px;
+}
+
+.screen-box {
+    border: 1px solid red;
+    height: 90px;
+    margin: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-box {
+    height: 60%;
+    margin: 40px;
+}
+
+.lines {
+    height: 16%;
+    display: flex;
+}
+
+.columns {
+    border: 1px solid pink;
+    height: 80%;
+    width: 25%;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+button {
+    border: none;
+    background-color: white;
+}
+
+.resultado {
+    border: 1px solid purple;
+    height: 60%;
+    width: 80%;
+}
