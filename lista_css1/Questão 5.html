@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>   
+   <title>Exemplo especificidade de seletores</title>
+   <style>
+      /*regra 1*/ li{color:red;} 
+      /*regra 2*/ .churras{color:green;}
+      /*regra 3*/ .fruta{color:gray}
+      /*regra 4*/ li+li.churras{color: black;}
+      /*regra 5*/ .churras[draggable="true"]{color: magenta;}
+      /*regra 6*/ #lip1,#lip2,#lip3{color:blue}
+      /*regra 7*/ #lip3.fruta{color:orange}
+      /*regra 8*/ ol>li.churras#lip5{color:purple}
+   </style>
+</head>
+<body>   
+   <ol>
+   <!--item 1--> <li id="lip0">Abacaxi</li> <!-- Ficou vermelho pois o item herdou os atributos da estilização li base, tendo em vista que não existe estilização para o id lip0-->
+   <!--item 2--> <li           class="fruta">Melão</li> <!-- A classe fruta é estilizada como cinza -->
+   <!--item 3--> <li id="lip2" class="fruta">Pera</li> <!-- O seletor ID é mais específico que o Class, por isso a Pera recebe a estilização de lip2 -->
+   <!--item 4--> <li id="lip3" class="fruta">Uva</li> <!-- O Item está capturando a estilização mais específica de soma de ID+Class -->
+   <!--item 5--> <li id="lip4" class="fruta">Maçã</li> <!-- Está pegando a estilização apenas da classe, já que o Id não é estilizado -->
+   <!--item 6--> <li           class="churras">Carne</li> <!-- Está capturando a estilizaçãop que possui maior peso, soma li+li.churras -->
+   <!--item 7--> <li           class="churras">Linguiça</li> <!-- Assim como o anterior, captura a estilização de maior peso li+li.churras -->
+   <!--item 8--> <li id="lip7" class="churras" draggable="true">Pão de alho</li> <!-- Recebe a estilização devido ao draggable -->
+   </ol>   
+</body>
+</html>

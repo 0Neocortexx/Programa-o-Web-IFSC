@@ -3,22 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat</title>
+    <title>Document</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            width: 100vw;
-            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+        .container {
+            width: 50vw;
+        }
+        .nav {
+            border: 1px solid white;
+            display: flex;
+            align-items: end;
+        }
+        .nav img {
+            border: 1px solid white;
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+        }
+        .nav ul {
+            display: flex;
+            border: 1px solid white;
+        }
+        .nav ul li {
+            color: white;
+            list-style-type: none;
+            margin-left: 50px;
+        }
+
+        .content-item {
+            border: 1px solid white;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            background-color: bisque;
+            width: 80%;
+            border-radius: 10%;
+        }
+
+        .content-item img {
+            width: 350px;
+            height: 200px;
+            margin-top: 10px;
+        }
+        .content {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content .content-item p  {
+            margin: 0;
+            padding: 6px;
+        }
+
         #caixa-chat {
             width: 450px;
             height: 600px;
             border: 1px solid black;
-            position: absolute;
+            position: fixed;
             right: 20px;
             bottom: 20px;
             border-radius: 10px;
+            background-color: white;
         }
         .mensagem {
             margin: 15px;
@@ -78,6 +133,42 @@
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="nav">
+            <img src="logoaleatorio.jpg" alt="Logotipo">
+            <div>
+                <ul>
+                    <li><a href="#"><h3>Home</h3></a></li>
+                    <li><a href="#"><h3>Sobre</h3></a></li>
+                    <li><a href="#"><h3>Contatos</h3></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content"> 
+
+            <div class="content-item">
+                <img src="pratodecomida.jpg" alt="Prato de comida">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eos magni quam</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eos magni quam</p>
+            </div>
+
+            <div class="content-item">
+                <img src="sorvete.jpg" alt="sorvete">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eos magni quam</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eos magni quam</p>
+            </div>
+
+            <div class="content-item">
+                <img src="sorvete.jpg" alt="sorvete">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eos magni quam</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eos magni quam</p>
+            </div>
+
+        </div>
+    </div>
+
+
     <div id="caixa-chat">
 
         <div class="mensagem">

@@ -12,17 +12,52 @@
             height: 100vh;
         }
         span {
-            border-radius: 100%;
+            border-radius: 50%;
             border: 1px solid black;
-            margin: 20px;
-            padding: 20px;
-            display: block;
+            margin: 2px;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 1px 1px 1px 2px lightgray;
         }
         div {
-            width: 50vw;
-            height: 80px;
-            border: 1px solid red;
+            width: 20vw;
+            height: 50px;
             display: flex;
+        }
+
+        #id1 span:first-child {
+            background-color: red;
+        }
+        #id2 span:last-child {
+            background-color: green;
+        }
+        #id3 span:nth-child(2){
+            background-color: blue;
+        }
+        #id4 span:nth-child(5){
+            background-color: palevioletred;
+        }
+        #id5 span:nth-child(1),#id5 span:nth-child(3), #id5 span:nth-child(5){
+            background-color: yellow;
+        }
+        #id6 span:nth-child(2),#id6 span:nth-child(4), #id6 span:nth-child(6){
+            background-color: orange;
+        }
+        #id7 span:nth-child(4){
+            background-color: pink;
+        }
+        #id8 span:nth-child(2), #id8 span:nth-child(5){
+            background-color: #5e2129;
+        }
+        #id9 span:nth-child(1), #id9 span:nth-child(4){
+            background-color: gray;
+        }
+        #id10 span:nth-child(4), #id10 span:nth-child(5), #id10 span:nth-child(6){
+            background-color: purple;
         }
     </style>
 </head>
