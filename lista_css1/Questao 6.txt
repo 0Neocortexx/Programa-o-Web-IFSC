@@ -1,0 +1,8 @@
+Podemos incluir o CSS em um arquivo de várias maneiras. Aqui vai uma lista
+
+> External [linkado]: Neste método será criado um arquivo a parte somente com as estilzações de uma página e inserindo uma referencia dentro 
+head do documento HTML com a tag <link>. Este método ajuda na organização dos estilos e arquivos da página, porém em certos níveis é mais lento que os outros métodos.
+> Internal [Dentro do HEAD]: Também é possível inserir o CSS dentro de uma tag <style> dentro da tag HEAD. No quesito organização esse método não supera o External, porém 
+em questão de velocidade este método se sobressai.
+> inline [Dentro da TAG]: Também é possível inserir uma estilização em um elemento individual dentro da tag body com a anotação style. Em questão de organização esse método é o pior 
+entre os citados, porém em questão de velocidade esse método é o melhor.

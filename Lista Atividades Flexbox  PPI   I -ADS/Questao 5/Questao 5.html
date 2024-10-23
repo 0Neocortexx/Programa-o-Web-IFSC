@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            background-color: bisque;
+        }
+        .item {
+            border: 1px solid black;
+            width: 20vw;
+            height: 50vh;
+            margin-left: 20px;
+            border-radius: 70px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            padding-bottom: 10px;
+        }
+        .item1 {
+            background-image: url("paisagem1.jpg");
+            background-size: cover;
+        }
+        .item2 {
+            background-image: url("paisagem2.jpg");
+            background-size: cover;
+        }
+        .item3 {
+            background-image: url("paisagem3.jpg");
+            background-size: cover;
+        }
+        .item4 {
+            background-image: url("paisagem4.jpg");
+            background-size: cover;
+        }
+        .item5 {
+            background-image: url("paisagem5.jpg");
+            background-size: cover;
+        }
+
+        .item_contraido {
+            width: 3%;
+        }
+
+        .item_aberto {
+            width: 30%;
+            border-radius: 30px;
+            justify-content: start;
+            padding: 10px;
+        }
+        img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        .icon-box {
+            border: 1px solid black;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        p {
+            padding: 0;
+            margin: 0;
+            margin-left: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+        <div class="item item1 item_contraido">
+            <div class="icon-box">
+                <img src="iconepessoaandando.jpg" alt="icone pessoa andando">
+            </div>
+        </div>
+
+        <div class="item item2 item_aberto">
+            <div class="icon-box">
+                <img src="iconegelo.avif" alt="icone gelo">
+            </div>
+
+            <div class="box_text">
+                <p><b>Oretemauw</b></p> 
+                <p>Omuke thrute a otufta</p>
+            </div>
+
+        </div>
+
+        <div class="item item3 item_contraido">
+            <div class="icon-box">
+                <img src="iconesino.png" alt="icone sino">
+            </div>
+        </div>
+
+        <div class="item item4 item_contraido">
+            <div class="icon-box">
+                <img src="iconegota.png" alt="icone gota">
+            </div>
+        </div>
+
+        <div class="item item5 item_contraido">
+            <div class="icon-box">
+                <img src="iconesol.png" alt="icone sol">
+            </div>
+        </div>
+</body>
+</html>

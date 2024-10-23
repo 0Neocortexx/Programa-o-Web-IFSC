@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 30%;
+            height: 99.7%;
+            border: 1px solid purple;
+        }
+        .company_logo {
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .divlist {
+            height: 30px;
+            margin: 30px;
+            background-color: lightgrey;
+            border-radius: 3px;
+        }
+
+        .divfooter {
+            height: 42%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+        }
+        .circlediv {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            margin-bottom: 25px;
+            background-color: lightgrey;
+        }
+        .divfootertext {
+            height: 30px;
+            width: 40%;
+            margin-bottom: 40px;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="company_logo">
+            <h2>Company Logo</h2>
+        </div>
+        <div class="list">
+            <div class="divlist"></div>
+            <div class="divlist"></div>
+            <div class="divlist"></div>
+            <div class="divlist"></div>
+        </div>
+
+        <div class="divfooter">
+            <div class="circlediv"></div>
+            <div class="divfootertext"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Os seletores CSS são parâmetros que servem como identificador de elementos de uma página HTML
+
+* -> seletor universal (Seleciona todos os elementos de uma pagina HTML)
+p [por tag] -> Seletor por tag (Seleciona todas as tags da página informada no seletor)
+.class -> Seletor por classe (Seleciona um grupo de elementos definidos na pagina)
+#id -> Seletor por ID (Seleciona os elementos marcados com o id selecionado)

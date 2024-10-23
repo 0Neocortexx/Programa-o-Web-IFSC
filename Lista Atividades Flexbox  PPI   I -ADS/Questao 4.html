@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+            grid-template-areas:
+            "header header"
+            "nav cabecalho"
+            "nav conteudo"
+            "nav rodape"
+            ;
+
+            grid-template-rows: 15svh 15svh 55svh 15svh; 
+
+            grid-template-columns: 25svw 75svw;
+        }
+
+        .header {   
+            grid-area:header;
+            border: 1px solid black;
+            background-color: black;
+            display: flex;
+            align-items: end;
+        }
+
+        .navegacao {
+            grid-area: nav;
+            border: 1px solid black;
+            background-color: orange;
+            font-size: 20px;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cabecalho {
+            grid-area: cabecalho;
+            border: 1px solid black;
+            background-color: blue;
+            font-size: 20px;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .conteudo {
+            grid-area: conteudo;
+            border: 1px solid black;
+            background-color:blueviolet;
+            font-size: 20px;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .rodape {
+            grid-area: rodape;
+            border: 1px solid black;
+            background-color: blue;
+            font-size: 20px;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+        .circle {
+            background-color: aqua;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="navegacao">navegacao</div>
+    <div class="cabecalho">cabecalho</div>
+    <div class="conteudo">conteudo</div>
+    <div class="rodape">rodape</div>
+</body>
+</html>

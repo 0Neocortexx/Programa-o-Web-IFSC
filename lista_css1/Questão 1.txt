@@ -1,1 +1,7 @@
-Uma
+Uma regra CSS é uma regra de estilização estabelecida para um elemento da página HTML
+
+p {
+    text-align: center;
+}
+
+Neste exemplo uma regra é estabelecida para todos os elementos "p" da página HTML

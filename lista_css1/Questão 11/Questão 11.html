@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        #caixa-chat {
+            width: 450px;
+            height: 600px;
+            border: 1px solid black;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            border-radius: 10px;
+        }
+        .mensagem {
+            width: 90%;
+            height: 15%;
+            margin: 15px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+        .enviada {
+            background-color: lightgreen;
+            width: 90%;
+            height: 90%;
+            border: 1px solid gray;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            padding: 20px;
+            padding-top: 0;
+        }
+        .recebida {
+            width: 90%;
+            height: 90%;
+            border: 1px solid gray;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            padding-top: 0;
+        }
+        .enviar_mensagem {
+            width: 90%;
+            height: 25%;
+            border: 1px solid black;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+        #box_text {
+            width: 90%;
+            height: 60%;
+            margin: 20px;
+            margin-bottom: 0;
+            border-radius: 5px;
+        }
+        #submit_buttom {
+            width: 90px;
+            position: absolute;
+            right: 50px;
+            bottom: 15px;
+            height: 25px;
+        }
+        .name_user {
+            margin: 0;
+            padding-left: 13px;
+            border: 0;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            border: 1px solid gray;
+        }
+        .texto_mensagem {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa-chat">
+
+        <div class="mensagem">
+            <p class="name_user">Pedro Silva</p>
+            <div class="recebida">
+                <img src="woman.png" alt="icone_user"><p class="texto_mensagem">Olá Tudo bem?</p>
+            </div>
+        </div>
+
+        <div class="mensagem">
+            <p class="name_user">Eu</p>
+            <div class="enviada">
+                <img src="woman.png" alt="icone_user"><p class="texto_mensagem">Olá Tudo bem?</p>
+            </div>
+        </div>
+
+        <div class="mensagem">
+            <p class="name_user">Pedro Silva</p>
+            <div class="recebida">
+                <img src="woman.png" alt="icone_user"><p class="texto_mensagem">Vamos sair hoje? Sabe conversar e Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="mensagem">
+            <p class="name_user">Eu</p>
+            <div class="enviada">
+                <img src="woman.png" alt="icone_user"><p class="texto_mensagem">Criatura ...</p>
+            </div>
+        </div>
+        <div class="enviar_mensagem">
+            <input type="text" id="box_text" placeholder="Digite sua mensagem"><br>
+            <input type="button" value="Enviar" id="submit_buttom">
+        </div>
+    </div>
+</body>
+</html>

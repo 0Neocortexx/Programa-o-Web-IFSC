@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            background-color: #AAAAAA;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        #box1 {
+            background-color: red;
+            padding: 20px;
+            border-top: 7px solid black;
+            border-radius: 5%;
+        }
+        #box1:hover {
+            background-color: black;
+            transition: 1s;
+        }
+        #box2 {
+            background-color: blue;
+            border-radius: 5% 7% 0% 0%;
+        }
+        #box2:hover {
+            zoom: 150%;
+        }
+        #box3 {
+            background: linear-gradient(green, red);
+            background-color: aqua;
+        }
+        #box4 {
+            background-color: green;
+            border-radius: 50%;
+            text-align: center;
+            opacity: 0.5;
+            box-shadow: 10px 16px 19px 20px teal;
+        }
+        div {
+            margin: 10px;
+            outline: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"> </div>
+    <div class="box" id="box2"> </div>
+    <div class="box" id="box3"> </div>
+    <div class="box" id="box4"> </div>
+</body>
+</html>
