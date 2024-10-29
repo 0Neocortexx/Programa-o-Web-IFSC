@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+
+            grid-template-areas:
+            "header header header"
+            "leftaside banner rightaside"
+            "leftaside content rightaside"
+            "leftaside lowcontent rightaside"
+            "footer footer footer"
+            ;
+
+            grid-template-columns: 15svw 70svw 15svw;
+
+            grid-template-rows: 15svh 7.5svh 60svh 7.5svh 10svh;
+        }
+
+        div {
+            margin: 5px;
+            border-radius: 5px;
+        }
+        
+        .header {
+            grid-area: header;
+            background-color: yellow;
+        }
+        .leftaside {
+            grid-area: leftaside;
+            background-color: green;
+        }
+        .rightaside {
+            grid-area: rightaside;
+            background-color: yellow;
+        }
+        .banner {
+            grid-area: banner;
+            background-color: red;
+        }
+        .content {
+            grid-area: content;
+            background-color: blue;
+        }
+
+        .lowcontent {
+            grid-area: lowcontent;
+            background-color: green;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: blue;
+        }
+
+        @media (max-width: 700px) {
+            body {
+            display: grid;
+
+            grid-template-areas:
+            "header"
+            "banner"
+            "leftaside"
+            "content"
+            "rightaside"
+            "lowcontent"
+            "footer"
+            ;
+
+            grid-template-columns: 100svw;
+
+            grid-template-rows: 60px 60px 60px 400px 60px 60px 60px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="leftaside"></div>
+    <div class="rightaside"></div>
+    <div class="banner"></div>
+    <div class="content"></div>
+    <div class="lowcontent"></div>
+    <div class="footer"></div>
+</body>
+</html>

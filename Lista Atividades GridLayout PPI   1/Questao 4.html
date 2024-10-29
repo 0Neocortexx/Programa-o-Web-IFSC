@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+
+            grid-template-areas:
+            "a a na b" 
+            "c d d d"
+            "c d d d" 
+            ;
+
+            grid-template-columns: 30svw 20svw 30svw 20svw;
+        }
+        .a {
+            grid-area: a;
+        }
+        .b {
+            grid-area: b;
+        }
+        .c {
+            grid-area: c;
+        }
+        .na {
+            grid-area: na;
+        }
+        .d {
+            grid-area: d;
+            display: grid;
+
+            grid-template-areas: 
+            "e f g"
+            "m i j"
+            ;
+
+            grid-template-columns: 35% 30% 35%;
+        }
+        .d div {
+            margin: 20px;
+            background-color: lightgray;
+        }
+
+        div {
+            border: 1px solid black;
+        }
+
+        body div {
+            margin: 15px;
+            border-radius: 10px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <div class="na"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d">
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="m"></div>
+        <div class="i"></div>
+        <div class="j"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-areas:
+                "leftaside header header rightaside"
+                "leftaside identityaluno identityaluno rightaside"
+                "leftaside navbar navbar rightaside"
+                "leftaside noticias1 studentblock rightaside"
+                "leftaside noticias2 studentblock rightaside"
+                "leftaside turmas studentblock rightaside"
+                "leftaside comunicados studentblock rightaside";
+
+            grid-template-columns: 20svw 40svw 20svw 20svw;
+            grid-template-rows: 4svh 7svh 4svh;
+        }
+
+        .leftaside {
+            grid-area: leftaside;
+        }
+
+        .rightaside {
+            grid-area: rightaside;
+        }
+
+        .header {
+            grid-area: header;
+            display: flex;
+            font-size: 10px;
+            color: #FFF;
+            background: #404E82;
+            border-bottom: 3px solid #D99C44;
+            align-items: center;
+        }
+
+        .header h2 {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            font-size: 1.1em;
+            font-weight: normal;
+            display: inline;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            unicode-bidi: isolate;
+        }
+
+        .identityaluno {
+            grid-area: identityaluno;
+            background: #C4D2EB;
+            color: #222;
+            position: relative;
+            min-height: 48px;
+            height: auto !important;
+        }
+
+        .identityaluno p {
+            font-size: 0.9em;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            grid-area: navbar;
+            display: flex;
+            background-color:bisque;
+        }
+        .navbar div {
+            margin-right: 20px;
+        }
+
+        .noticias1 {
+            grid-area: noticias1;
+            background-color: lightgreen;
+        }
+        .noticias2 {
+            grid-area: noticias2;
+            background-color: bisque;
+        }
+
+        .studentblock {
+            grid-area: studentblock;
+            display: flex;
+            flex-direction: column;
+        }
+        .studentblock img {
+            width: 150px;
+            border: 1px solid black;
+            
+        }
+        .studentblock .data {
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            flex-direction: column;
+            font-size: 11px;
+        }
+
+        .studentblock .aluno {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .turmas {
+            grid-area: turmas;
+        }
+
+        .comunicados {
+            grid-area: comunicados;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h2>IFSC - SIGAA - </h2>
+        <h2> Sistema Integrado de Gestão de Atividades Acadêmicas</h2>
+    </div>
+    <div class="leftaside"></div>
+    <div class="rightaside"></div>
+    <div class="identityaluno">
+        <p><b>JONATHAN EMMANUEL DE O. AMORIM</b></p>
+        <p>CAMPUS GASPAR - GAS (11.01.64)</p>
+    </div>
+    <div class="navbar">
+        <div>Ensino</div>
+        <div>Pesquisa</div>
+        <div>Extensão</div>
+        <div>Serviços externos</div>
+        <div>Bolsas</div>
+        <div>Estágios</div>
+        <div>Ambientes Virtuais</div>
+        <div>Outros</div>
+    </div>
+    <div class="noticias1"></div>
+    <div class="noticias2"></div>
+    <div class="studentblock">
+        <div class="aluno">
+            <div class="data">
+                <p>Atualizar perfil</p><br>
+                <p>Meus dados pessoais</p>
+                <p>Atualizar Dados para o ICPEdu</p>
+            </div>
+            <div class="image"><img src="https://media.istockphoto.com/id/454439027/pt/foto/rato.jpg?s=612x612&w=0&k=20&c=hjRYoEjnHrmEEY1aBknMAIts3VmFYOUER_40y5RC62M=" alt="foto"></div>
+        </div>
+    </div>
+    <div class="turmas"></div>
+    <div class="comunicados"></div>
+</body>
+
+</html>

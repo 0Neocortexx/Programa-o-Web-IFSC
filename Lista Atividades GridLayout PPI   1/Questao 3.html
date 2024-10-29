@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+
+            grid-template-areas:
+            "bloco1 bloco1 bloco1"
+            "bloco2 bloco3 bloco4"
+            "bloco5 bloco3 bloco6"
+            "bloco5 bloco7 bloco7"
+            ;
+
+            grid-template-rows: 15svh; 
+        }
+
+        .bloco1 {
+            grid-area: bloco1;
+            background-color: yellow;
+        }
+        .bloco2 {
+            grid-area: bloco2;
+            background-color: red;
+            
+        }
+        .bloco3 {
+            grid-area: bloco3;
+            background-color: yellow;
+        }
+        .bloco4 {
+            grid-area: bloco4;
+            border: 1px solid black;
+            background-color: red;
+        }
+        .bloco5 {
+            grid-area: bloco5;
+            background-color: yellow;
+        }
+        .bloco6 {
+            grid-area: bloco6;
+            background-color: red;
+        }
+        .bloco7 {
+            grid-area: bloco7;
+            background-color: yellow;
+        }
+        div {
+            margin: 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco1"></div>
+    <div class="bloco2"></div>
+    <div class="bloco3"></div>
+    <div class="bloco4"></div>
+    <div class="bloco5"></div>
+    <div class="bloco6"></div>
+    <div class="bloco7"></div>
+</body>
+</html>
