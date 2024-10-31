@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desinteria Lanches - Sopa de storatoba</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+
+            grid-template-areas:
+            "foto dados"
+            ;
+
+            grid-template-rows: 100svh;
+
+            grid-template-columns: 40svw 60svw;
+
+            background: linear-gradient(300deg,#ff0000,#fbf2f2) no-repeat;
+            background-size: cover;
+        }
+        .foto {
+            grid-area: foto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            width: 430px;
+            height: 300px;
+            border-radius: 10px;
+            border: 2px solid gray;
+        }
+        .listimage ul{
+            width: 100%;
+            display: flex;
+            margin-top: 0px;
+            padding-left: 0;
+        }
+        .listimage li {
+            list-style-type: none;
+            background-color: black;
+            color: white;
+            width: 40px;
+            height: 40px;
+            margin: 2px 10px 3px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .listimage li:hover {
+            border: 1px solid white;
+            cursor: pointer;
+        }
+
+        .dados {
+            grid-area: dados;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .titleproduct {
+            font-size: 15px;
+            width: 80%;
+            padding: 0;
+        }
+        h1 {
+            padding: 0;
+            margin: 0;
+        }
+        .descproduct {
+            width: 80%;
+            margin: 20px 0px 50px 0px;
+        }
+        .descproduct p {
+            font-size: 20px;
+        }
+        .descproduct li {
+            font-size: 20px;
+        }
+        a {
+            font-size: 18px;
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        a:hover {
+            border: 1px solid white;
+        }
+
+        .back {
+            width: 80%;
+            padding-left: 40px;
+        }
+
+        @media (max-width: 1200px) {
+            body {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                background-size: cover;
+                background: #fe0557;
+            }
+
+            .foto {
+                margin: 30px 0px 40px 0px
+            }
+
+            .dados {
+                padding-bottom: 30px;
+            }
+
+            .dados p {
+                text-align: justify;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="foto">
+        <div class="image">
+            <img src="https://media.istockphoto.com/id/1457011330/video/closeup-shot-of-a-street-vendor-making-chana-chole-indian-chickpea-street-vendor-street-food.jpg?s=640x640&k=20&c=gVzrAIiZoM_ElohsdE84_UhxLDW_GKhlgvb5OKLcBfc=" alt="Sopa de storatoba">
+        </div>
+        <div class="listimage">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>...</li>
+            </ul>
+        </div>
+    </div>
+    <div class="dados">
+        <div class="titleproduct">
+            <h1>Detalhes do produto</h1>
+        </div>
+        <div class="descproduct">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quaerat explicabo libero laudantium, accusantium voluptates assumenda iste! Fuga corrupti officia hic itaque, laborum recusandae excepturi, neque earum, numquam ducimus autem?</p>
+            <ul>
+                <li>Extrato de storatoba</li>
+                <li>Agua de poço artesiano</li>
+                <li>Rabo de lagarto aposentado</li>
+                <li>Cabelo de careca</li>
+                <li>Areia de manguezal</li>
+                <li>Tempero de lampada queimada</li>
+            </ul>
+        </div>
+
+        <div class="back">
+            <a href="produtos.html">Voltar</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desinteria Lanches - Produtos</title>
+    <style>
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(300deg,#ff0000,#fbf2f2) no-repeat;
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        img {
+            width: 150px;
+            height: 100px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        .content {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        ul {
+            padding-right: 30px;
+            width: 100%;
+        }
+
+        li {
+            border: 2px solid black;
+            font-size: 20px;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+            margin-top: 10px;
+
+        }
+        span {
+            background-color: black;
+            color: white;
+            margin: 20px;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        span:hover {
+            cursor: pointer;
+            border: 1px solid white;
+        }
+
+        p {
+            border-bottom: 1px solid black;
+            font-size: 20px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        .titlebox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 60%;
+        }
+
+        .titlebox a {
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .titlebox a:hover {
+            cursor: pointer;
+            border: 1px solid white;
+        }
+
+        @media (min-width: 1001px) {
+            span::after {
+                content: ' Adicionar ao carrinho';
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            body {
+                background-color: black;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            img {
+                width: 100px;
+                height: 80px;
+                border-radius: 10px;
+                border: 1px solid black;
+            }
+
+            .content {
+                width: 80%;
+                transition: 1s;
+            }  
+
+            li {
+                justify-content: space-between;
+            }
+
+            span {
+                background-color: black;
+                margin: 10px;
+            }
+            p {
+                font-size: 15px;
+            }
+
+            .titlebox {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+            }
+            a {
+                font-size: 15px;
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        window.alert("Para ver a página de detalhe do produto clique no nome do ultimo item");
+    </script>
+
+    <div class="content">
+        <div class="titlebox">
+            <h1 style="text-align: center;">Lista de produtos</h1> <a href="">Visualizar carrinho</a>
+        </div>
+        <ul>
+            <li><img src="https://catracalivre.com.br/wp-content/uploads/2015/02/PC140037-450x338.jpg" alt="suco de pereba"><p>Suco de pereba vencida</p> <span>+</span></li>
+            <li><img src="https://images.uncyc.org/pt/thumb/7/7c/Caldodepilha.png/300px-Caldodepilha.png" alt="Caldo de pila"> <p>Caldo de pilha</p> <span>+</span> </li>
+            <li><img src="https://i.ytimg.com/vi/iBVGMeUAWnc/maxresdefault.jpg" alt="Suco de aloe vera"><p>Suco de Aloe Vera</p> <span>+</span></li>
+            <li><img src="https://catracalivre.com.br/wp-content/uploads/2015/02/PC300006-450x338.jpg" alt="Macarrao de verme"><p>Macarrão de verme com salada</p> <span>+</span></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkuaMXd5hnkZXaJl1N-Bch5DkdILstatvp2w&s" alt="Suco de uva feito de fígado"><p>Suco de uva feito de fígado</p><span>+</span></li>
+            <li><img src="https://img.freepik.com/fotos-premium/vijayawada-india-saborosa-comida-de-rua-indiana_380726-919.jpg" alt="Batata frita de gengibre"><p>Batata frita de gengibre</p><span>+</span></li>
+            <li><img src="https://media.melhoresdestinos.com.br/2018/07/comida-rua-india.jpg" alt="Pão Fitness"><p>Pão Fitness</p><span>+</span></li>
+            <li><img src="https://media.istockphoto.com/id/1457011330/video/closeup-shot-of-a-street-vendor-making-chana-chole-indian-chickpea-street-vendor-street-food.jpg?s=640x640&k=20&c=gVzrAIiZoM_ElohsdE84_UhxLDW_GKhlgvb5OKLcBfc=" alt="Sopa de storatoba"><p><a style="text-decoration: none; color: black;" href="detalheproduto.html">Sopa de storatoba</a></p><span>+</span></li>
+        </ul>
+    </div>
+</body>
+</html>
