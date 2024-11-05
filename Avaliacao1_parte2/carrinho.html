@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desinteria Lanches - Carrinho</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+
+            display: grid;
+            grid-template-areas:
+                "title"
+                "itens"
+                "pagamento";
+
+            grid-template-rows: 10svh 50svh 50svh;
+
+            /* Configurações de background */
+            background: linear-gradient(300deg,#ff0000,#fbf2f2);
+            background-repeat: no-repeat;
+            background-size: cover;             
+            min-height: 100vh;
+        }
+
+
+        .title {
+            grid-area: title;
+            text-align: center; /* Centraliza o texto do título */
+        }
+
+        .title h1 {
+            margin: 10px;
+            padding: 0;
+            text-align: center; /* Centraliza o texto do título */
+        }
+
+        .itens {
+            grid-area: itens;
+            display: flex;
+        }
+
+        .lista {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lista li {
+            border: 2px solid black;
+            padding: 10px;
+            font-size: 20px;
+            list-style-type: none;
+            align-items: center;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .compra-item {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .compra-item img {
+            width: 50%;
+            height: auto;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        .listimage {
+            padding: 0;
+            margin: 0;
+        }
+
+        .listimage ul{
+            display: flex;
+            margin-top: 0px;
+            padding: 0;
+        }
+        .listimage li {
+            list-style-type: none;
+            background-color: black;
+            color: white;
+            width: 30px;
+            height: 30px;
+            margin: 2px 10px 0px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        .listimage li:hover {
+            border: 1px solid white;
+            cursor: pointer;
+        }
+
+        .pagamento {
+            grid-area: pagamento;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .formulario {
+            width: 30%;
+            align-items: center;    
+            height: 70%; 
+            margin-bottom: 10px;
+        }
+
+        .formulario form {
+            width: 100%;
+            align-items: center;     
+            display: flex;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        
+        .inputpreenche {
+            width: 200px;
+            height: 20px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 1100px) {
+
+            body {
+                grid-template-rows: auto;
+            }
+
+            .itens {
+                grid-area: itens;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .lista {
+                width: 95%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .compra-item img {
+                width: 100%;
+                height: auto;
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+
+            .pagamento {
+                margin-bottom: 30px;
+            }
+
+            .formulario {
+                width: 95%;
+                align-items: center;    
+                height: 90%; 
+                margin-bottom: 10px;
+            }
+
+            .formulario form{
+                padding: 10px 0px 10px 0px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Desinteria Lanches - Carrinho</h1>
+    </div>
+
+    <div class="itens">
+        <div class="lista">
+
+            <h2>Itens no Carrinho</h2>
+            <ul>
+                <li>Caldo de pilha - R$ 5,50</li>
+                <li>Hambúrguer de Sola de Sapato - R$ 12,00</li>
+                <li>Batata Murcha com Cobertura de Óleo Vencido - R$ 4,90</li>
+                <li>Torta de Pó de Borracha com Granulado de Prego - R$ 5,40</li>
+            </ul>
+        </div>
+
+        <div class="compra-item">
+            <h2>Itens Adquiridos</h2>
+            <img src="https://ciclovivo.com.br/wp-content/uploads/2015/009/img/noticias/03.%20ces_nopopo_05.jpg" alt="suco de pilha">
+
+            <div class="listimage">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>...</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="pagamento">
+        <h2>Pagamento</h2>
+        <div class="formulario">
+            <form>
+                <div style="margin-right: 10px;">
+                    <label for="cartao">Nome do portador:</label><br>
+                    <input class="inputpreenche" type="text" id="cartao" name="cartao" required><br>
+                    <label for="cartao">Número do Cartão:</label><br>
+                    <input class="inputpreenche" type="text" id="cartao" name="cartao" required><br>
+                    <label for="cartao">CPF:</label><br>
+                    <input class="inputpreenche" type="number" id="cartao" name="cartao" required><br>
+                    <label for="cartao">Vencimento:</label><br>
+                    <input class="inputpreenche" type="date" id="cartao" name="cartao" required><br>
+                </div>
+                <div class="payment-data">
+                    <label for="valor">Valor Total:</label><br>
+                <input class="inputpreenche" type="text" id="valor" name="valor" value="R$ 25,40" readonly><br><br>
+                <input type="submit" value="Finalizar Compra">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

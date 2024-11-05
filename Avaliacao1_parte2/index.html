@@ -6,68 +6,208 @@
     <title>Desinteria Lanches</title>
     <style>
         body {
-            width: 100svw;
-            height: 100svh;
+            width: 100%;
             margin: 0;
             padding: 0;
 
+            /* Define o alinhamento dos elementos body*/
             display: flex;
             justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            
-            background: linear-gradient(300deg,#ff0000,#fbf2f2);
+
+            /* Configurações de background */
+            background: linear-gradient(300deg,#ff0000,#fbf2f2); /* 300deg indica o angulo */
+            background-repeat: no-repeat;
+            background-size: cover;
+             
+            min-height: 100vh; /* Faz com que o html e o body ocupem pelo menos a altura total da janela, o que eliminam qualquer espaço em branco ao redimensionar */
 
             }
         .content {
-            height: 60%;
-            width: 80%;
+            height: auto;
+            width: 25%;
             display: flex;
             justify-content:space-evenly;
+            flex-direction: column;
             align-items: center;
+            margin: 15px 0px 10px 0px;
         }
 
         .content-item {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 30%;
-            height: 80%;
+            width: 100%;
             align-items: center;
         }
         .content h1 {
             font-size: 20px;
+            text-transform: uppercase;
         }
 
         img {
-            width: 350px;
-            height: 300px;
+            width: 300px;
+            height: 280px;
             border: 1px solid black;
             border-radius: 10px;
+            border-radius: 50%;
 
+        }
+
+        .acompanhamentos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .acompanhamentos h1 {
+            margin: 20px 0px 0px 0px; 
+        }
+
+
+        .acompanhamentos ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .acompanhamentos li {
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 10px;
+        }
+
+        .info {
+            margin: 20px;
+        }
+        .info p {
+            margin: 20px;
+            font-weight: bold;
+            font-size: 18px;
+            border: 1px solid black;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: lightgray;
+            text-align: justify;
+        }
+        #link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            flex-direction: column;
+        }
+
+        a {
+            font-size: 20px;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 10px;
+            text-decoration: none;
+            margin: 10px;
+        }
+        a:hover {
+            cursor: pointer;
+            background-color: greenyellow;
+            color: black;
+            transition: 1s;
+        }
+
+        .box-info{
+            width: 40%; 
+            height: auto; 
+            padding: 20px;
+        }
+
+        @media(max-width: 900px){
+            body {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .box-info {
+                width: 80%;
+            }
+
+            .content {
+                width: 80%;
+                margin-top: 20px;
+            }
+
+            .info {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="title">
-        <h1>DESINTERIA LANCHES</h1>
+
+    <div class="box-info">
+        <div class="title">
+            <h1>DESINTERIA LANCHES</h1>
+        </div>
+
+        <div class="info">
+            <h2>Sobre nós</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dignissimos placeat ullam iste quisquam dolores fuga ipsa nihil, minima eligendi animi similique, error debitis harum dolorem facilis, culpa tempora voluptatem?</p>
+        </div>
+
+        <div class="info">
+            <h2>Horario de atendimento</h2>
+            <ul>
+                <li>Segunda: 08:00 - 18:00</li>
+                <li>Terça: 04:00 - 22:00</li>
+                <li>Quarta: 01:00 - 12:00</li>
+                <li>Quinta: Fechado</li>
+                <li>Sexta: Depende</li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h2>Localização</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsam maiores cum quibusdam, aliquam officia amet voluptatibus sed repellat neque soluta et animi ab quisquam iusto dolorum assumenda rerum excepturi!</p>
+        </div>
+
+        <div class="info">
+            <h2>Nossa missão</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam numquam repellendus quam eius veritatis, possimus suscipit est perferendis atque. Corrupti non optio soluta maxime perspiciatis eos? Dolorum, sint omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, voluptatum itaque quibusdam libero sequi cum illo temporibus numquam nemo earum sed neque doloribus molestias! Ex magnam optio consequuntur velit sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, rerum. Veniam quos voluptas a voluptates voluptatem, mollitia recusandae doloribus soluta necessitatibus eos tenetur maiores autem at nemo optio repellat hic?</p>
+        </div>
+
+        <div id="link">
+            <a href="produtos.html">Clique aqui para visualizar os produtos</a>
+
+            <a href="contato.html">Fale conosco</a>
+        </div>
     </div>
+
+
     <div class="content">
         <div class="content-item">
-            <h1>Almoço</h1>
             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBFhuIGFoBe8sCiSUIqg-Pbc1ZcBOGp-hK_ntFMbcd3s30-7O4zqalUV3x3f_CtlxJT55fnUXUkuAs1JOm7ySptpG1MmaSGQpcrdv58N2Dz4c0Q5-daZuHmlk1lWB3uVSazmipuNnQAys/s1600/DSC01313.JPG" alt="">
-        </div>
-        <div class="content-item">
-            <h1>Lanches</h1>
+            <h1>Almoço</h1>
+
             <img src="https://www.fatosdesconhecidos.com.br/wp-content/uploads/2017/06/9-43.jpg" alt="Almoço">
+            <h1>Lanches</h1>
         </div>
-        <div class="content-item">
-            <h1>Buffet</h1>
-            <img src="https://estevampelomundo.com.br/wp-content/uploads/2024/06/image-28.png" alt="BUFFET">
+
+        <div class="acompanhamentos">
+            <h1>Acompanhamentos</h1>
+                <ul>
+                    <li>Farofa de Serragem</li>
+                    <li>Pó de Queijo Antigo</li>
+                    <li>Salada de Folhas Secas de Calçada</li>
+                    <li>Purê de Casca de Coco</li>
+                    <li>Batata Seca de Vários Dias</li>
+                    <li>Arroz de Areia da Praia</li>
+                    <li>Pão Dormido com Pó de Giz</li>
+                    <li>Sementes de Amendoim Desbotado</li>
+                    <li>Couve Refogada no Óleo de Três Meses</li>
+                    <li>Feijão com Casca de Ovo</li>
+                </ul>
         </div>
-    </div>
-    <div>
-        <h1><a href="produtos.html">Visualizar produtos</a></h1>
     </div>
 </body>
 </html>

@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desinteria Lanches - Produtos</title>
     <style>
-        body {
+
+        html, body {
+            /* "Zerar" a página*/
             width: 100%;
             margin: 0;
             padding: 0;
+
+            /* Define a centralização da página*/
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(300deg,#ff0000,#fbf2f2) no-repeat;
 
             font-family: Arial, Helvetica, sans-serif;
-        }
 
-        img {
-            width: 150px;
-            height: 100px;
-            border-radius: 10px;
-            border: 1px solid black;
-        }
+            /* Configurações de background */
+            background: linear-gradient(300deg,#ff0000,#fbf2f2);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            min-height: 100vh;
+        } 
 
         .content {
             width: 60%;
@@ -61,11 +64,14 @@
         }
 
         p {
-            border-bottom: 1px solid black;
             font-size: 20px;
+            margin: 10px;
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 10px;
         }
 
-        h1 {
+        h2 {
             text-transform: uppercase;
             font-size: 30px;
         }
@@ -76,7 +82,7 @@
             width: 60%;
         }
 
-        .titlebox a {
+        #VerCarrinho {
             text-decoration: none;
             color: white;
             background-color: black;
@@ -84,7 +90,7 @@
             border-radius: 10px;
         }
 
-        .titlebox a:hover {
+        #VerCarrinho:hover {
             cursor: pointer;
             border: 1px solid white;
         }
@@ -97,32 +103,17 @@
         }
 
         @media (max-width: 1200px) {
-            body {
-                background-color: black;
-            }
-
-            h1 {
-                font-size: 20px;
-            }
-
-            img {
-                width: 100px;
-                height: 80px;
-                border-radius: 10px;
-                border: 1px solid black;
-            }
-
             .content {
                 width: 80%;
                 transition: 1s;
             }  
 
             li {
-                justify-content: space-between;
+                font-size: 15px;
+                text-align: center;
             }
 
             span {
-                background-color: black;
                 margin: 10px;
             }
             p {
@@ -130,41 +121,73 @@
             }
 
             .titlebox {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
                 width: 90%;
+                margin-top: 15px;
             }
-            a {
-                font-size: 15px;
-                width: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+
+            #VerCarrinho {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
         }
+        }
+
+        #VerCarrinho {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+        }
+
     </style>
 </head>
 <body>
 
     <script>
-        window.alert("Para ver a página de detalhe do produto clique no nome do ultimo item");
+        window.alert("Para ver a página de detalhe do produto clique caldo de pilha");
     </script>
 
     <div class="content">
         <div class="titlebox">
-            <h1 style="text-align: center;">Lista de produtos</h1> <a href="">Visualizar carrinho</a>
+            <h1 style="text-align: center;">Cardápio</h1> <a id="VerCarrinho" href="carrinho.html">Visualizar carrinho</a>
         </div>
+
+        <h2>Pratos Principais</h2>
         <ul>
-            <li><img src="https://catracalivre.com.br/wp-content/uploads/2015/02/PC140037-450x338.jpg" alt="suco de pereba"><p>Suco de pereba vencida</p> <span>+</span></li>
-            <li><img src="https://images.uncyc.org/pt/thumb/7/7c/Caldodepilha.png/300px-Caldodepilha.png" alt="Caldo de pila"> <p>Caldo de pilha</p> <span>+</span> </li>
-            <li><img src="https://i.ytimg.com/vi/iBVGMeUAWnc/maxresdefault.jpg" alt="Suco de aloe vera"><p>Suco de Aloe Vera</p> <span>+</span></li>
-            <li><img src="https://catracalivre.com.br/wp-content/uploads/2015/02/PC300006-450x338.jpg" alt="Macarrao de verme"><p>Macarrão de verme com salada</p> <span>+</span></li>
-            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkuaMXd5hnkZXaJl1N-Bch5DkdILstatvp2w&s" alt="Suco de uva feito de fígado"><p>Suco de uva feito de fígado</p><span>+</span></li>
-            <li><img src="https://img.freepik.com/fotos-premium/vijayawada-india-saborosa-comida-de-rua-indiana_380726-919.jpg" alt="Batata frita de gengibre"><p>Batata frita de gengibre</p><span>+</span></li>
-            <li><img src="https://media.melhoresdestinos.com.br/2018/07/comida-rua-india.jpg" alt="Pão Fitness"><p>Pão Fitness</p><span>+</span></li>
-            <li><img src="https://media.istockphoto.com/id/1457011330/video/closeup-shot-of-a-street-vendor-making-chana-chole-indian-chickpea-street-vendor-street-food.jpg?s=640x640&k=20&c=gVzrAIiZoM_ElohsdE84_UhxLDW_GKhlgvb5OKLcBfc=" alt="Sopa de storatoba"><p><a style="text-decoration: none; color: black;" href="detalheproduto.html">Sopa de storatoba</a></p><span>+</span></li>
+            <li><p>R$ 5,50</p> <a href="detalheproduto.html">Caldo de Pilha</a><span>+</span></li>
+            <li><p>R$ 7,50</p> Sanduíche de Miolo de Pão Murcho com Pó de Giz<span>+</span></li>
+            <li><p>R$ 6,80</p> Pastel de Ar com Massa de Jornal Recheado de Poeira<span>+</span></li>
+            <li><p>R$ 12,00</p> Hambúrguer de Sola de Sapato com Caldo de Encanamento<span>+</span></li>
+            <li><p>R$ 14,50</p> Pizza de Mofos Variados<span>+</span></li>
         </ul>
+
+        <h2>Bebidas</h2>
+        <ul>
+            <li><p>R$ 3,50</p> Suco de Pereba Vencida <span>+</span></li>
+            <li><p>R$ 4,00</p> Refresco de Ferrugem com Restos de Bateria <span>+</span></li>
+            <li><p>R$ 5,20</p> Milkshake de Sabão em Pó com Mofo<span>+</span></li>
+            <li><p>R$ 2,80</p> Refrigerante de Água de Enxurrada<span>+</span></li>
+            <li><p>R$ 3,00</p> Água de Salsicha Passada<span>+</span></li>
+        </ul>
+    
+        <h2>Porções e Petiscos</h2>
+        <ul>
+            <li><p>R$ 4,90</p> Batata Murcha com Cobertura de Óleo Vencido<span>+</span></li>
+            <li><p>R$ 3,70</p> Fritas de Casca de Banana com Grãos de Areia<span>+</span></li>
+            <li><p>R$ 5,00</p> Bolinho de Pó de Ralo - Textura indescritível<span>+</span></li>
+            <li><p>R$ 2,50</p> Chips de Casca de Cebola que Estava no Fundo da Geladeira<span>+</span></li>
+            <li><p>R$ 3,20</p> Empada de Ar com Pó de Café que já Foi Usado<span>+</span></li>
+        </ul>
+    
+        <h2>Sobremesas</h2>
+        <ul>
+            <li><p>R$ 4,50</p> Pudim de Restos de Bolo com Sabor de Fumaça<span>+</span></li>
+            <li><p>R$ 3,30</p> Gelatina de Água de Pote de Maionese<span>+</span></li>
+            <li><p>R$ 5,40</p> Torta de Pó de Borracha com Granulado de Prego<span>+</span></li>
+            <li><p>R$ 2,80</p> Sorvete de Sabonete Desmanchado<span>+</span></li>
+            <li><p>R$ 3,00</p> Brigadeiro de Grão de Chão<span>+</span></li>
+        </ul>
+
     </div>
 </body>
 </html>

@@ -53,6 +53,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            border-radius: 50%;
         }
         .listimage li:hover {
             border: 1px solid white;
@@ -124,6 +125,16 @@
             .dados p {
                 text-align: justify;
             }
+            
+        }
+
+        @media (max-width: 600px) {
+            img {
+                width: 280px;
+                height: 200px;
+                border-radius: 10px;
+                border: 2px solid gray;
+            }
         }
     </style>
 </head>
@@ -151,7 +162,7 @@
         <div class="descproduct">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quaerat explicabo libero laudantium, accusantium voluptates assumenda iste! Fuga corrupti officia hic itaque, laborum recusandae excepturi, neque earum, numquam ducimus autem?</p>
             <ul>
-                <li>Extrato de storatoba</li>
+                <li>Extrato de lítio</li>
                 <li>Agua de poço artesiano</li>
                 <li>Rabo de lagarto aposentado</li>
                 <li>Cabelo de careca</li>

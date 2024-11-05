@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desinteria Lanches - Contato</title>
+</head>
+
+<style>
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+        /* Define o alinhamento dos elementos body*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Configurações de background */
+        background: linear-gradient(300deg,#ff0000,#fbf2f2);
+        background-repeat: no-repeat;
+        background-size: cover;
+         
+        min-height: 100vh; /* Faz com que o html e o body ocupem pelo menos a altura total da janela, o que eliminam qualquer espaço em branco ao redimensionar */
+    }
+        h1 {
+            text-align: center;
+        }
+
+        .content {
+            width: 25%;
+            height: 55%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .formulario {
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        li {
+            border: 1px solid black;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 10px;
+            list-style-type: none;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        .inputpreenche {
+            width: 200px;
+            height: 20px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 1000px) {
+            .content {
+                margin-bottom: 30px;
+            }
+        }
+
+</style>
+<body>
+    <div class="content">
+        <h1>Fale Conosco</h1>
+
+        <div>
+            <ul>
+                <li>Telefone: (012) 98456-2312</li>
+                <li>E-mail: desinterialanches@dorbarriga.com.br</li>
+                <li>Fax: 4923458325</li>
+            </ul>
+        </div>
+
+        <div class="formulario">
+            <form>
+                <label for="cartao">Seu e-mail:</label><br>
+                <input class="inputpreenche" type="text" name="cartao" required><br><br>
+                <label for="cartao">Motivo do contato:</label><br>
+                <input class="inputpreenche" type="text" name="cartao" required><br><br>
+                <input type="button" value="Enviar"><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
