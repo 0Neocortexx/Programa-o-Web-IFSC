@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="min">Minimo:</label><br>
+    <input type="text" name="min" id="min"><br>
+    <label for="max">Maximo: </label><br>
+    <input type="text" name="max" id="max"><br>
+    <button type="button" id="botao">Gerar numero aleatorio</button>
+    <div id="response">
+
+    </div>
+
+    <script>
+        var botao = document.querySelector('#botao');
+
+        botao.addEventListener('click', () => {
+            var min = parseInt(document.querySelector('#min').value);
+            var max = parseInt(document.querySelector('#max').value);
+
+            var numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
+            var response = document.querySelector('#response');
+            response.innerHTML = `Numero Aleatorio gerado: ${numeroAleatorio}`;
+        })
+    </script>
+</body>
+</html>
