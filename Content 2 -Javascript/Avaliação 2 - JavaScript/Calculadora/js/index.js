@@ -1,22 +1,32 @@
+const display = document.querySelector('#display-content');
+
 function addInDisplay(value) {
-    console.log(value);
-    var display = document.querySelector('#display-content');
-    var display_content = display.value;
-    console.log(display_content);
-    display.value = display_content + value;  
+    if((
+        display.value == '' || getLastValueDisplay(display.value) == '*' || getLastValueDisplay(display.value) == '/' || getLastValueDisplay(display.value) == '+' || getLastValueDisplay(display.value) == '-') 
+        && 
+        (value == '*' || value == '/' || value == '+' || value == '.' || (value == "-" && getLastValueDisplay(display.value) == "-"))) 
+        {
+        display.value = display.value;
+    } else {
+        display.value += value;
+    }
 }
 
 function showResult() {
-    var display = document.querySelector('#display-content');
-    var display_content = display.value;
-    if(display_content == '') {
-        display_content = '';
+    if(display.value == '' || getLastValueDisplay(display.value) == '*' || getLastValueDisplay(display.value) == '/' || getLastValueDisplay(display.value) == '+' || getLastValueDisplay(display.value) == '-' || getLastValueDisplay(display.value) == '.') {
+        display.value = display.value;
     } else {
-        display.value = eval(display_content);
+        display.value = eval(display.value);
+        console.log(eval(display.value))
     }
 }
 
 function cleanDisplay() {
-    var display = document.querySelector('#display-content');
     display.value = '';
+}
+
+const getLastValueDisplay = (displayValue) => {
+    var string = displayValue;
+    var lastValue = string.charAt(string.length-1); 
+    return lastValue;
 }

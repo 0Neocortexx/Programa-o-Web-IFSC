@@ -14,8 +14,8 @@ tr {
 }
 
 .calculator {
-    width: 30%;
-    height: 60%;
+    width: 50%;
+    height: 80%;
     box-shadow: 0px 0px 0px 20px;
 }
 
@@ -31,4 +31,8 @@ tr {
 
 #equal-button {
     height: 80%;
+}
+
+.calculatorBox {
+    width: 50%;
 }
